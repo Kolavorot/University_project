@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyway</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slyle.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__list list-reset">
+                    <li class="nav__item">
+                        <a href="#about-us" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#message" class="nav__link">Отправить заявку</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about-us section-offset" id="about-us">
+            <div class="container about-us__container">
+              <div class="about-us__content">
+                <h1 class="first-title title-reset">
+                    Продуктивный рост любой агрокультуры
+                </h1>
+                <p class="text text-reset about-us__descr">
+                    Мы - компания по производству революционных систем полива агрокультур. В нашей системе используются новейшие пестициды, обесечивающее качестенный и быстрый рост растений. Чтобы ознакомиться с нашими услугами подайте заявку.
+                </p>
+                <a class="about-us__button button-reset" href="#message">Отправить заявку</a>
+              </div>
+            </div>
+        </section>
+        <section class="contacts section-offset" id="contacts">
+            <div class="container contacts__container">
+                <h2 class="second title title-reset">
+                    Контакты
+                </h2>
+                <div class="contacts__left">
+                    <address class="address">
+                        <ul class="adress_list list-reset">
+                            <li class="adress__item">
+                                <b class="adress__name">
+                                    Адрес
+                                </b>
+                                <p class="adress__text text-reset">
+                                    Ульяновск, улица Тельмана, дом 5&nbsp;
+                                </p>
+                            </li>
+                            <li class="adress__item">
+                                <b class="adress__name">
+                                    Телефон
+                                </b>
+                                <a href="tel:+9041936680" class="adrsess__link">
+                                    +7 904 193-66-80
+                                </a>
+                            </li>
+                            <li class="adress__item">
+                                <b class="adress__name">
+                                    E-mail
+                                </b>
+                                <a href="mailto:dmitry.gerasimov.34@gmail.com">
+                                    dmitry.gerasimov.34@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="contacts__right">
+                    <img src="" alt="Работа Polyway">ы
+                </div>
+            </div>
+        </section>
+        <section class="message section-offset" id="message">
+          <div class="container">
+            <h2 class="second-title title-reset">
+                Отправить заявку
+            </h2>
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <div class="form__block">
+                    <label class="label" for="user-data">Фамилия, Имя, Отчество</label>
+                    <input class="form__input" type="text" id="user-data" name="user-data" required placeholder="ФИО">
+                </div>
+                <div class="form__block">
+                    <label class="label" for="date">Дата</label>
+                    <input class="form__input" type="date" id="date" name="Date" required placeholder="Дата оказани услуги">
+                </div>
+                <div class="form__block">
+                    <label for="type-of-service">Вид агрокультуры</label>
+                    <select class="form__select" name="type-of-service" id="type-of-service" required>
+                        <option value="Пшеница" selected>Пшеница</option>
+                        <option value="Рожь" selected>Рожь</option>
+                        <option value="Ячмень" selected>Ячмень</option>
+                        <option value="Горох" selected>Горох</option>
+                        <option value="Подсолнечнк" selected>Подсолнечнк</option>
+                        <option value="Кукуруза" selected>Кукуруза</option>
+                        <option value="Картофель" selected>Картофель</option>
+                        <option value="Овощи" selected>Овощи</option>
+                        <option value="Травы" selected>Травы</option>
+                    </select>
+                </div>
+                <div class="form__block">
+                    <label for="comment"></label>
+                    <textarea class="form__textarea" name="Comment" id="comment" placeholder="Пожелания"></textarea>
+                </div>
+                <div class="form__wrpapper">
+                    <button class="form__button button-reset button">
+                        Отправить данные
+                    </button>
+                    <label class="form__check">
+                        <input type="checkbox" required>
+                        Согласен на обработку персональных данных
+                    </label>
+                </div>
+            </form>
+          </div>
+        </section>
+    </main>
+</body>
+</html>

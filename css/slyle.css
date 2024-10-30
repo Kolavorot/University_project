@@ -1,0 +1,155 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'font', sans-serif;
+}
+
+/* global */
+:root{
+  --black: #000;
+  --white: #fff;
+  --grey: #cacaca;
+  --background: #4ce7da;
+  --descr: #1F07B3;
+  --button-hover: #160582;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-offset{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.list-reset{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button-reset{
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.title-reset{
+  margin: 0;
+}
+
+.text-reset{
+  margin: 0;
+}
+
+.second-title{
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--black);
+}
+
+/* header */
+
+.header__container{
+  display: flex;
+  padding: 14px 75px;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+}
+
+.header__logo{
+  margin-right: auto;
+}
+
+.header__nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__link{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 200%;
+  color: var(--grey);
+}
+
+.nav__link{
+  margin-right: 85px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+}
+
+/* about-us */
+.about-us__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 80px;
+  background-color: var(--background);
+  border-radius: 32px;
+}
+
+.first-title{
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 70px;
+  color: var(--white);
+  -webkit-text-stroke: 1px var(--black);
+}
+
+
+.about-us__descr{
+  margin-bottom: 90px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--descr);
+}
+
+.about-us__button{
+  position: relative;
+  padding: 25px 39px;
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 16px;
+  background: var(--descr);
+  transition: background 0.3s ease-in-out;
+}
+
+.about-us__button:hover{
+  background: var(--button-hover);
+}
+
+/* contacts */
