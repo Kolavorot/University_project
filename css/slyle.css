@@ -232,6 +232,7 @@ body {
 .address__list{
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 
 .address__item{
@@ -239,10 +240,6 @@ body {
   justify-content: space-between;
   padding-bottom: 23px;
   border-bottom: 1px solid #e9e9e9;
-}
-
-.address__item:not(:last-child){
-  margin-right: 25px;
 }
 
 .address__name{
@@ -265,3 +262,94 @@ body {
   color: var(--descr);
 }
 
+/* message */
+.message__container{
+  padding: 45px;
+  border-radius: 15px;
+  background: #e9e9e9;
+}
+
+.form{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 50px;
+  padding: 28px 32px;
+  border-radius: 15px;
+  background: var(--white);
+}
+
+.form__block{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 15px;
+  max-width: 170px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black);
+}
+
+.form__select{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.form__select:focus{
+  outline: 1px solid var(--basic-yellow);
+  outline-offset: 5px;
+}
+
+.form__input{
+  border: none;
+  border-bottom: 1px solid #e9e9e9;
+  outline: none;
+}
+
+.form__input::-webkit-calendar-picker-indicator:focus-visible{
+  outline: 2px solid var(--basic-yellow);
+}
+
+.form__input::-webkit-inner-spin-button{
+  opacity: 1;
+}
+
+.form__input:focus{
+  outline-offset: 5px;
+  outline: 1px solid var(--basic-yellow)
+}
+
+.form__wrpapper{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.form__button{
+  max-width: 170px;
+  width: 100%;
+  padding:  10px 15px;
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 16px;
+  background: var(--descr);
+  transition: background 0.3s ease-in-out;
+}
+
+.form__button:hover{
+  background: var(--button-hover);
+}
+
+.form__check{
+  max-width: 150px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+}
