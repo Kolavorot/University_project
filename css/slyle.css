@@ -262,6 +262,9 @@ body {
   color: var(--descr);
 }
 
+.hours{
+font-size: 20px;
+}
 /* message */
 .message__container{
   padding: 45px;
